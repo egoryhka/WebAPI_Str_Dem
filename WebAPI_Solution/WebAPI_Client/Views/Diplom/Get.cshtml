@@ -1,0 +1,51 @@
+﻿@model IEnumerable<DiplomsClassLibrary.Models.Diplom>
+
+
+<h1>ДИПЛОМЫ</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><p />Автор</td>
+            <td><p />Тема работы</td>
+            <td><p />Направление</td>
+            <td><p />Год публикации</td>
+            <td><p />Степень работы</td>
+            <td><p />Руководитель</td>
+            <td>Изменение работы</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (Model != null) foreach (var diplom in Model)
+            {
+                <tr>
+
+                    <td style="user-select:none; text-align:left; min-width:200px">
+                        @(diplom.Author.SecondName + diplom.Author.FirstName[0] +"." +diplom.Author.ThirdName[0])
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:300px">
+                        @diplom.Title
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:150px">
+                        @diplom.Direction.Name
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:150px">
+                        @diplom.Release.ToShortDateString()
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:150px">
+                        @diplom.AcademicDegree.ToString()
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:150px">
+                        @diplom.HeadName
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:450px">
+                        <div> <a class="button" asp-controller="Diplom" asp-action="Edit" asp-route-id="@diplom.Id">Изменить</a>  </div>
+                    </td>
+                </tr>
+            }
+    </tbody>
+</table>
+
+<a class="button" asp-controller="Diplom" asp-action="Add">Добавить</a>
+

@@ -1,0 +1,12 @@
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\bin\Debug\net5.0\DiplomsClassLibrary.deps.json
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\bin\Debug\net5.0\DiplomsClassLibrary.dll
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\bin\Debug\net5.0\ref\DiplomsClassLibrary.dll
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\bin\Debug\net5.0\DiplomsClassLibrary.pdb
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\obj\Debug\net5.0\DiplomsClassLibrary.csprojAssemblyReference.cache
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\obj\Debug\net5.0\DiplomsClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\obj\Debug\net5.0\DiplomsClassLibrary.AssemblyInfoInputs.cache
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\obj\Debug\net5.0\DiplomsClassLibrary.AssemblyInfo.cs
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\obj\Debug\net5.0\DiplomsClassLibrary.csproj.CoreCompileInputs.cache
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\obj\Debug\net5.0\DiplomsClassLibrary.dll
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\obj\Debug\net5.0\ref\DiplomsClassLibrary.dll
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\DiplomsClassLibrary\obj\Debug\net5.0\DiplomsClassLibrary.pdb

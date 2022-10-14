@@ -1,0 +1,44 @@
+﻿@model (DiplomsClassLibrary.Models.Diplom diplom, SelectList authors, SelectList directions)
+
+@{
+    ViewData["Title"] = "DiplomEdit";
+}
+
+<h1>ИЗМЕНИТЬ ДИПЛОМ</h1>
+
+
+<form asp-action="Edit" asp-controller="Diplom" method="post">
+    <div>
+        <label>Тема работы</label>
+        <input type="text" name="Title" value="@Model.diplom.Title" />
+    </div>
+    <div>
+        <label>Руководитель</label>
+        <input type="text" name="HeadName" value="@Model.diplom.HeadName" />
+    </div>
+    <div>
+        <label>Год публикации</label>
+        <input type="text" name="Release" value="@Model.diplom.Release" />
+    </div>
+
+    <div>
+        <label>Степень работы</label>
+        @Html.DropDownListFor(x => x.diplom.AcademicDegree, new SelectList(Enum.GetNames<DiplomsClassLibrary.Models.AcademicDegree>(), Model.diplom.AcademicDegree))
+    </div>
+
+    <div>
+        <label>Автор</label>
+        @Html.DropDownListFor(x => x.diplom.AuthorId, Model.authors)
+    </div>
+
+    <div>
+        <label>Направление</label>
+        @Html.DropDownListFor(x => x.diplom.DirectionId, Model.directions)
+    </div>
+
+    <input class="button" type="submit" value="Подтвердить" />
+</form>
+
+<form asp-action="Remove" asp-controller="Diplom" asp-route-id="@Model.diplom.Id" method="post">
+    <input class="button" type="submit" value="Удалить" />
+</form>

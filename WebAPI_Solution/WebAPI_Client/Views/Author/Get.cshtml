@@ -1,0 +1,54 @@
+﻿@model IEnumerable<DiplomsClassLibrary.Models.Author>
+@{
+    ViewData["Title"] = "PeopleGet";
+}
+
+<h1>PeopleGet</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td><p />Фамилия</td>
+            <td><p />Имя</td>
+            <td><p />Отчество</td>
+            <td><p />Должность</td>
+            <td><p />Ученая степень</td>
+            <td>Изменение работы</td>
+        </tr>
+
+    </thead>
+    <tbody>
+        @*Сюда надо будет вставтиь откуда инфу берем*@
+        @if (Model != null) foreach (var p in Model)
+            {
+                <tr>
+                    <td style="user-select:none; text-align:left; min-width:450px">
+                        <div class="d-inline-block">
+                            <button type="submit" name="id" value="@p.Id">Удалить</button>
+                            <button asp-controller="" asp-action="" asp-route-projectId="@p.Id">Изменить</button>
+                        </div>
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:350px">
+                        @p.FirstName
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:350px">
+                        @p.SecondName
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:350px">
+                        @p.ThirdName
+                    </td>
+
+                    <td style="user-select:none; text-align:left; min-width:150px">
+                        @p.Position.Name
+                    </td>
+                    @*<td style="user-select:none; text-align:left; min-width:150px">
+                            @p.AcademicDegree.Name
+                        </td>*@
+
+                </tr>
+            }
+    </tbody>
+
+</table>
+<button asp-controller="" asp-action="/PeopleAdd">Добавить челоВЕКА</button>
+
