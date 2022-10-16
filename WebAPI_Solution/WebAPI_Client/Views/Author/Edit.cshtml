@@ -1,7 +1,50 @@
-﻿
+﻿@model WebAPI_Client.Controllers.AuthorController.AuthorAndPositions
+
 @{
     ViewData["Title"] = "AuthorEdit";
 }
 
 <h1>ИЗМЕНИТЬ АВТОРА</h1>
 
+<form asp-action="Edit" asp-controller="Author" asp-route-Author.Id="@Model.Author.Id" method="post">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Фамилия</td>
+                <td>Имя</td>
+                <td>Отчество</td>
+                <td>Должность</td>
+                <td>Ученая степень</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input value="@Model.Author.SecondName" placeholder="SecondName" name="Author.SecondName" type="text" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input value="@Model.Author.FirstName" placeholder="FirstName" name="Author.FirstName" type="text" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input value="@Model.Author.ThirdName" placeholder="ThirdName" name="Author.ThirdName" type="text" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:160px">
+                    @Html.DropDownListFor(x => x.Author.PositionId, Model.Positions)
+                </td>
+                <td style="user-select:none; text-align:left; min-width:160px">
+                    @Html.DropDownListFor(x => x.Author.AcademicDegree, new SelectList(Enum.GetNames<DiplomsClassLibrary.Models.AcademicDegree>(), Model.Author.AcademicDegree))
+                </td>
+                <td style="user-select:none; ">
+                    <input class="commit-button" type="submit" value="Подтвердить" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</form>
+
+
+<form asp-action="Remove" asp-controller="Author" asp-route-id="@Model.Author.Id" method="post">
+    <input class="delete-button d-inline" type="submit" value="Удалить" />
+</form>

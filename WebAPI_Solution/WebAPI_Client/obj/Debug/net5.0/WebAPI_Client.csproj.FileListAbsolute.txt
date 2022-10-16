@@ -364,5 +364,7 @@ E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\D
 E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Diplom\Get.cshtml.g.cs
 E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Direction\Edit.cshtml.g.cs
 E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Direction\Get.cshtml.g.cs
-E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Position\AcademicDegreeAdd.cshtml.g.cs
-E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Position\AcademicDegreeGet.cshtml.g.cs
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Direction\Add.cshtml.g.cs
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Position\Add.cshtml.g.cs
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Position\Edit.cshtml.g.cs
+E:\Мага\Гурэн\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\Razor\Views\Position\Get.cshtml.g.cs

@@ -1,9 +1,9 @@
 ﻿@model IEnumerable<DiplomsClassLibrary.Models.Author>
 @{
-    ViewData["Title"] = "PeopleGet";
+    ViewData["Title"] = "AuthorGet";
 }
 
-<h1>PeopleGet</h1>
+<h1>АВТОРЫ</h1>
 
 <table class="table table-bordered">
     <thead>
@@ -13,42 +13,74 @@
             <td><p />Отчество</td>
             <td><p />Должность</td>
             <td><p />Ученая степень</td>
-            <td>Изменение работы</td>
+            <td>Измененить</td>
         </tr>
 
     </thead>
     <tbody>
-        @*Сюда надо будет вставтиь откуда инфу берем*@
         @if (Model != null) foreach (var p in Model)
             {
                 <tr>
-                    <td style="user-select:none; text-align:left; min-width:450px">
-                        <div class="d-inline-block">
-                            <button type="submit" name="id" value="@p.Id">Удалить</button>
-                            <button asp-controller="" asp-action="" asp-route-projectId="@p.Id">Изменить</button>
-                        </div>
-                    </td>
-                    <td style="user-select:none; text-align:left; min-width:350px">
+
+                    <td style="user-select:none; text-align:left; min-width:150px">
                         @p.FirstName
                     </td>
-                    <td style="user-select:none; text-align:left; min-width:350px">
+                    <td style="user-select:none; text-align:left; min-width:150px">
                         @p.SecondName
                     </td>
-                    <td style="user-select:none; text-align:left; min-width:350px">
+                    <td style="user-select:none; text-align:left; min-width:150px">
                         @p.ThirdName
                     </td>
 
-                    <td style="user-select:none; text-align:left; min-width:150px">
+                    <td style="user-select:none; text-align:left; min-width:160px">
                         @p.Position.Name
                     </td>
-                    @*<td style="user-select:none; text-align:left; min-width:150px">
-                            @p.AcademicDegree.Name
-                        </td>*@
-
+                    <td style="user-select:none; text-align:left; min-width:160px">
+                        @p.AcademicDegree.ToString()
+                    </td>
+                    <td style="user-select:none; text-align:left; min-width:100px; text-align:center">
+                        <div>
+                            @if (ViewBag.PositionsExists)
+                            {
+                                <a class="commit-button" asp-controller="Author" asp-action="Edit" asp-route-id="@p.Id">Изменить</a>
+                            }
+                            else
+                            {
+                                <a class="commit-button" onclick="CheckPositionsExists()">Изменить</a>
+                            }
+                        </div>
+                    </td>
                 </tr>
             }
     </tbody>
-
 </table>
-<button asp-controller="" asp-action="/PeopleAdd">Добавить челоВЕКА</button>
+@if (ViewBag.PositionsExists)
+{
+    <a class="commit-button" asp-controller="Author" asp-action="Add">Добавить</a>
+}
+else
+{
+    <a class="commit-button" onclick="CheckPositionsExists()">Добавить</a>
+}
 
+
+<div class="modal" tabindex="-1" id="positionsExistsModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4>Невозможно добавить/изменить автора так как таблица должностей пуста</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    function CheckPositionsExists() {
+        $('#positionsExistsModal').modal('show');
+    }
+
+</script>

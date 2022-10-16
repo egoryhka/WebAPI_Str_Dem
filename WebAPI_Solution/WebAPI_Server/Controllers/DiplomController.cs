@@ -48,6 +48,7 @@ namespace WebAPI_Solution.Controllers
             return Ok();
         }
 
+        [HttpPut]
         public IActionResult Put(Diplom diplom)
         {
             if (diplom == null) return BadRequest();

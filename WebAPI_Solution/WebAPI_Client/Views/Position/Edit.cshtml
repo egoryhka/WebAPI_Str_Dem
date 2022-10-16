@@ -1,16 +1,16 @@
-﻿@model DiplomsClassLibrary.Models.Direction
+﻿@model DiplomsClassLibrary.Models.Position
 
 @{
-    ViewData["Title"] = "DirectionEdit";
+    ViewData["Title"] = "PositionEdit";
 }
 
-<h1>ИЗМЕНИТЬ ОБЛАСТЬ РАЗРАБОТКИ</h1>
+<h1>ИЗМЕНИТЬ ДОЛЖНОСТЬ</h1>
 
-<form asp-action="Edit" asp-controller="Direction" method="post">
+<form asp-action="Edit" asp-controller="Position" method="post">
     <table class="table table-bordered">
         <thead>
             <tr>
-                <td>Область разработки</td>
+                <td>Должность</td>
                 <td></td>
             </tr>
         </thead>
@@ -27,6 +27,6 @@
     </table>
 </form>
 
-<form asp-action="Remove" asp-controller="Direction" asp-route-id="@Model.Id" method="post">
+<form asp-action="Remove" asp-controller="Position" asp-route-id="@Model.Id" method="post">
     <input class="delete-button" type="submit" value="Удалить" />
 </form>

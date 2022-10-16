@@ -73,24 +73,36 @@ body {
     line-height: 60px; /* Vertically center the text there */
 }
 
-.button {
+.commit-button {
+    user-select: none;
     background: #4990e2;
     color: whitesmoke;
     border-radius: 4px;
     padding: 0.5em;
+    border: 0;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 40%);
 }
 
-    .button:hover {
+    .commit-button:hover {
         background: #1b6ec2;
         color: whitesmoke;
         text-decoration: none;
-        box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+        box-shadow: 0 1px 4px rgb(0 0 0 / 40%);
     }
 
-.editor {
-    background: transparent;
-    color: #3b4151;
+.delete-button {
+    user-select: none;
+    background: #e24949;
+    color: whitesmoke;
     border-radius: 4px;
     padding: 0.5em;
-    border: 2px solid grey;
+    border: 0;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 40%);
 }
+
+    .delete-button:hover {
+        background: #c21b1b;
+        color: whitesmoke;
+        text-decoration: none;
+        box-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+    }

@@ -1,6 +1,6 @@
-﻿@model IEnumerable<DiplomsClassLibrary.Models.Direction>
+﻿@model IEnumerable<DiplomsClassLibrary.Models.Position>
 
-<h1>ОБЛАСТИ РАЗРАБОТКИ</h1>
+<h1>ДОЛЖНОСТИ</h1>
 
 <table class="table table-bordered">
     <thead>
@@ -11,16 +11,16 @@
     </thead>
 
     <tbody>
-        @if (Model != null) foreach (var direction in Model)
+        @if (Model != null) foreach (var position in Model)
             {
                 <tr>
                     <td style="user-select:none; text-align:left; min-width:200px">
-                        @direction.Name
+                        @position.Name
                     </td>
 
                     <td style="user-select:none; text-align:left; min-width:100px; text-align:center">
                         <div>
-                            <a class="commit-button" asp-controller="Direction" asp-action="Edit" asp-route-id="@direction.Id">Изменить</a>
+                            <a class="commit-button" asp-controller="Position" asp-action="Edit" asp-route-id="@position.Id">Изменить</a>
                         </div>
                     </td>
                 </tr>
@@ -28,4 +28,4 @@
     </tbody>
 </table>
 
-<a class="commit-button" asp-controller="Direction" asp-action="Add">Добавить</a>
+<a class="commit-button" asp-controller="Position" asp-action="Add">Добавить</a>

@@ -12,7 +12,7 @@
             <td><p />Год публикации</td>
             <td><p />Степень работы</td>
             <td><p />Руководитель</td>
-            <td>Изменение работы</td>
+            <td>Измененить</td>
         </tr>
     </thead>
 
@@ -21,11 +21,11 @@
             {
                 <tr>
 
-                    <td style="user-select:none; text-align:left; min-width:200px">
-                        @(diplom.Author.SecondName + diplom.Author.FirstName[0] +"." +diplom.Author.ThirdName[0])
+                    <td style="user-select:none; text-align:left; min-width:150px">
+                        @(diplom.Author.ShortFIO)
                     </td>
-                    <td style="user-select:none; text-align:left; min-width:300px">
-                        @diplom.Title
+                    <td style="user-select:none; text-align:left; min-width:300px;">
+                        <textarea style="width:100%" disabled rows="3">@diplom.Title</textarea>
                     </td>
                     <td style="user-select:none; text-align:left; min-width:150px">
                         @diplom.Direction.Name
@@ -39,13 +39,48 @@
                     <td style="user-select:none; text-align:left; min-width:150px">
                         @diplom.HeadName
                     </td>
-                    <td style="user-select:none; text-align:left; min-width:450px">
-                        <div> <a class="button" asp-controller="Diplom" asp-action="Edit" asp-route-id="@diplom.Id">Изменить</a>  </div>
+                    <td style="user-select:none; text-align:left; min-width:100px; text-align:center">
+                        <div>
+                            @if (ViewBag.AuthorsExists)
+                            {
+                                <a class="commit-button" asp-controller="Diplom" asp-action="Edit" asp-route-id="@diplom.Id">Изменить</a>
+                            }
+                            else
+                            {
+                                <a class="commit-button" onclick="CheckAuthorsExists()">Изменить</a>
+                            }
+                        </div>
                     </td>
                 </tr>
             }
     </tbody>
 </table>
+@if (ViewBag.AuthorsExists)
+{
+    <a class="commit-button" asp-controller="Diplom" asp-action="Add">Добавить</a>
+}
+else
+{
+    <a class="commit-button" onclick="CheckAuthorsExists()">Добавить</a>
+}
 
-<a class="button" asp-controller="Diplom" asp-action="Add">Добавить</a>
+<div class="modal" tabindex="-1" id="authorsExistsModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4>Невозможно добавить/изменить диплом так как таблица авторов пуста</h4>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+
+
+<script>
+
+    function CheckAuthorsExists() {
+        $('#authorsExistsModal').modal('show');
+    }
+
+</script>

@@ -1,4 +1,4 @@
-﻿@model (DiplomsClassLibrary.Models.Diplom diplom, SelectList authors, SelectList directions)
+﻿@model WebAPI_Client.Controllers.DiplomController.Diplom_Authors_Directions
 
 @{
     ViewData["Title"] = "DiplomEdit";
@@ -7,38 +7,48 @@
 <h1>ИЗМЕНИТЬ ДИПЛОМ</h1>
 
 
-<form asp-action="Edit" asp-controller="Diplom" method="post">
-    <div>
-        <label>Тема работы</label>
-        <input type="text" name="Title" value="@Model.diplom.Title" />
-    </div>
-    <div>
-        <label>Руководитель</label>
-        <input type="text" name="HeadName" value="@Model.diplom.HeadName" />
-    </div>
-    <div>
-        <label>Год публикации</label>
-        <input type="text" name="Release" value="@Model.diplom.Release" />
-    </div>
-
-    <div>
-        <label>Степень работы</label>
-        @Html.DropDownListFor(x => x.diplom.AcademicDegree, new SelectList(Enum.GetNames<DiplomsClassLibrary.Models.AcademicDegree>(), Model.diplom.AcademicDegree))
-    </div>
-
-    <div>
-        <label>Автор</label>
-        @Html.DropDownListFor(x => x.diplom.AuthorId, Model.authors)
-    </div>
-
-    <div>
-        <label>Направление</label>
-        @Html.DropDownListFor(x => x.diplom.DirectionId, Model.directions)
-    </div>
-
-    <input class="button" type="submit" value="Подтвердить" />
+<form asp-action="Edit" asp-controller="Diplom" asp-route-Diplom.Id="@Model.Diplom.Id" method="post">
+   
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Тема работы</td>
+                <td>Руководитель</td>
+                <td>Год публикации</td>
+                <td>Степень работы</td>
+                <td>Автор</td>
+                <td>Направление</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input type="text" placeholder="Title" name="Diplom.Title" value="@Model.Diplom.Title" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input type="text" placeholder="HeadName" name="Diplom.HeadName" value="@Model.Diplom.HeadName" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    @Html.EditorFor(x => x.Diplom.Release)
+                </td>
+                <td style="user-select:none; text-align:left; min-width:160px">
+                    @Html.DropDownListFor(x => x.Diplom.AcademicDegree, new SelectList(Enum.GetNames<DiplomsClassLibrary.Models.AcademicDegree>(), Model.Diplom.AcademicDegree))
+                </td>
+                <td style="user-select:none; text-align:left; min-width:160px">
+                    @Html.DropDownListFor(x => x.Diplom.AuthorId, Model.Authors)
+                </td>
+                <td style="user-select:none; text-align:left; min-width:160px">
+                    @Html.DropDownListFor(x => x.Diplom.DirectionId, Model.Directions)
+                </td>
+                <td tyle="user-select:none;">
+                    <input class="commit-button" type="submit" value="Подтвердить" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </form>
 
-<form asp-action="Remove" asp-controller="Diplom" asp-route-id="@Model.diplom.Id" method="post">
-    <input class="button" type="submit" value="Удалить" />
+<form asp-action="Remove" asp-controller="Diplom" asp-route-id="@Model.Diplom.Id" method="post">
+    <input class="delete-button" type="submit" value="Удалить" />
 </form>

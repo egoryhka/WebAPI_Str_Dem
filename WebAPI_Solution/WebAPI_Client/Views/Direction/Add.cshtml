@@ -1,0 +1,25 @@
+﻿@model DiplomsClassLibrary.Models.Direction
+
+@{
+    ViewData["Title"] = "DirectionAdd";
+}
+
+<h1>ДОБАВИТЬ ОБЛАСТЬ РАЗРАБОТКИ</h1>
+
+<form asp-action="Add" asp-controller="Direction" method="post">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Область разработки</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="user-select:none; text-align:left; min-width:350px">
+                    <input style="width:100%" placeholder="Name" value="@Model.Name" name="Name" type="text" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input class="commit-button" type="submit" value="Добавить область разработки" />
+</form>

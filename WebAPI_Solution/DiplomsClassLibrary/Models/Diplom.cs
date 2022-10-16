@@ -9,15 +9,14 @@ namespace DiplomsClassLibrary.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public DateTime Release { get; set; }
+        [DataType(DataType.Date)] public DateTime Release { get; set; }
 
-        [Required]
-        public string HeadName { get; set; }
+        [Required] public string HeadName { get; set; }
 
         public int DirectionId { get; set; }
         public virtual Direction Direction { get; set; }
 
-        public AcademicDegree AcademicDegree { get; set; }
+        [Required] public AcademicDegree AcademicDegree { get; set; }
 
         public int AuthorId { get; set; }
         public virtual Author Author { get; set; }

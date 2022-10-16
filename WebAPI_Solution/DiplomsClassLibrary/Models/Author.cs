@@ -11,6 +11,7 @@ namespace DiplomsClassLibrary.Models
         public string ThirdName { get; set; }
 
         public string FIO => SecondName + ' ' + FirstName + ' ' + ThirdName;
+        public string ShortFIO => SecondName + ' ' + FirstName?[0] + ' ' + ThirdName?[0];
 
         public int PositionId { get; set; }
         public virtual Position Position { get; set; }

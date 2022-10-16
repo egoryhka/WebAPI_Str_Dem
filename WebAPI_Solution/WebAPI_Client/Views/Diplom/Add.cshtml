@@ -1,12 +1,44 @@
-﻿
+﻿@model WebAPI_Client.Controllers.DiplomController.Diplom_Authors_Directions
 @{
     ViewData["Title"] = "DiplomAdd";
 }
 
 <h1>ДОБАВИТЬ ДИПЛОМ</h1>
 
-<form action="/Diplom/Add" method="post">
-
-
-
+<form asp-action="Add" asp-controller="Diplom" method="post">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td><p />Тема работы</td>
+                <td><p />Руководитель</td>
+                <td><p />Год публикации</td>
+                <td><p />Степень работы</td>
+                <td><p />Автор</td>
+                <td><p />Направление</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="user-select:none; text-align:left; min-width:300px">
+                    <textarea rows="3" style="width:100%" placeholder="Title" name="Diplom.Title" type="text">@Model.Diplom.Title</textarea>
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input value="@Model.Diplom.HeadName" placeholder="HeadName" name="Diplom.HeadName" type="text" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    @Html.EditorFor(x => x.Diplom.Release)
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    @Html.DropDownListFor(x => x.Diplom.AcademicDegree, new SelectList(Enum.GetNames<DiplomsClassLibrary.Models.AcademicDegree>(), Model.Diplom.AcademicDegree))
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    @Html.DropDownListFor(x => x.Diplom.AuthorId, Model.Authors)
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    @Html.DropDownListFor(x => x.Diplom.DirectionId, Model.Directions)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input class="commit-button" type="submit" value="Добавить диплом" />
 </form>

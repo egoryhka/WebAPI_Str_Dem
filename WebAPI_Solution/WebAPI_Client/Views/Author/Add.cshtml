@@ -1,7 +1,40 @@
-﻿
+﻿@model WebAPI_Client.Controllers.AuthorController.AuthorAndPositions
 @{
     ViewData["Title"] = "AuthorAdd";
 }
 
 <h1>ДОБАВИТЬ АВТОРА</h1>
 
+<form asp-action="Add" asp-controller="Author" method="post">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td><p />Фамилия</td>
+                <td><p />Имя</td>
+                <td><p />Отчество</td>
+                <td><p />Должность</td>
+                <td><p />Ученая степень</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input value="@Model.Author.SecondName" placeholder="SecondName" name="Author.SecondName" type="text" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input value="@Model.Author.FirstName" placeholder="FirstName" name="Author.FirstName" type="text" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:150px">
+                    <input value="@Model.Author.ThirdName" placeholder="ThirdName" name="Author.ThirdName" type="text" />
+                </td>
+                <td style="user-select:none; text-align:left; min-width:160px">
+                    @Html.DropDownListFor(x => x.Author.PositionId, Model.Positions)
+                </td>
+                <td style="user-select:none; text-align:left; min-width:160px">
+                    @Html.DropDownListFor(x => x.Author.AcademicDegree, new SelectList(Enum.GetNames<DiplomsClassLibrary.Models.AcademicDegree>(), Model.Author.AcademicDegree))
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <input class="commit-button" type="submit" value="Добавить автора" />
+</form>
