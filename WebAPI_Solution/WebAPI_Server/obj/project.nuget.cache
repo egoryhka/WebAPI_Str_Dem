@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Mu4+17dtKFkahSdKsZrlQlIFUwhZPAQeKdNPxLPNEWg/CHBQOx96yBua4HI0ADaDAutdIYCMA68Zio/llz9qg==",
+  "dgSpecHash": "n2f6qJzil8yCPDycmVv0sMNRrPZNU1onGFmU1frzqCVfcdIrYHYrt7GyLpuz951TrYUCcMSU7ru5CptjVk8TyA==",
   "success": true,
-  "projectFilePath": "E:\\Мага\\Гурэн\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Server\\WebAPI_Server.csproj",
+  "projectFilePath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Server\\WebAPI_Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Egor\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Egor\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -7550,11 +7550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Мага\\Гурэн\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Server\\WebAPI_Server.csproj",
+      "projectUniqueName": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Server\\WebAPI_Server.csproj",
       "projectName": "WebAPI_Server",
-      "projectPath": "E:\\Мага\\Гурэн\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Server\\WebAPI_Server.csproj",
+      "projectPath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Server\\WebAPI_Server.csproj",
       "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-      "outputPath": "E:\\Мага\\Гурэн\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Server\\obj\\",
+      "outputPath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7571,8 +7571,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\Мага\\Гурэн\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj": {
-              "projectPath": "E:\\Мага\\Гурэн\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj"
+            "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj": {
+              "projectPath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj"
             }
           }
         }

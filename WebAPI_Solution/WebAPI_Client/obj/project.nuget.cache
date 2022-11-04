@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XzXxRN6S7+l8wctC0XUDuciEWl8wxloSSZM7pSxDz8xebd8U+ALdntpufcc7pKK//yr3cnVuZ2uVOHcpWDp8Kw==",
+  "dgSpecHash": "72PCBS/z1TeAW49s32OSzVsfba9C2T1BBnkKMOh3Mv3Wj5ufvtjfVwoJzGoCLZfqQzEy5Css227JkKOius6lxQ==",
   "success": true,
-  "projectFilePath": "E:\\Мага\\Гурэн\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj",
+  "projectFilePath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Egor\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.17\\microsoft.aspnetcore.mvc.razor.extensions.5.0.17.nupkg.sha512",
     "C:\\Users\\Egor\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.17\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.17.nupkg.sha512",
