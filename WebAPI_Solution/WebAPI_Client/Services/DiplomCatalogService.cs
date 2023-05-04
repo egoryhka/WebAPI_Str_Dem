@@ -104,15 +104,15 @@ namespace WebAPI_Client.Services
         }
 
         // No Generic
-        public async Task<Diplom> GetDiplom(int id) => await GetItem<Diplom>("Diplom", id);
-        public async Task<Author> GetAuthor(int id) => await GetItem<Author>("Author", id);
-        public async Task<Direction> GetDirection(int id) => await GetItem<Direction>("Direction", id);
-        public async Task<Position> GetPosition(int id) => await GetItem<Position>("Position", id);
-
         public async Task<IEnumerable<Diplom>> GetDiploms() => await GetAll<Diplom>("Diplom");
         public async Task<IEnumerable<Author>> GetAuthors() => await GetAll<Author>("Author");
         public async Task<IEnumerable<Direction>> GetDirections() => await GetAll<Direction>("Direction");
         public async Task<IEnumerable<Position>> GetPositions() => await GetAll<Position>("Position");
+
+        public async Task<Diplom> GetDiplom(int id) => await GetItem<Diplom>("Diplom", id);
+        public async Task<Author> GetAuthor(int id) => await GetItem<Author>("Author", id);
+        public async Task<Direction> GetDirection(int id) => await GetItem<Direction>("Direction", id);
+        public async Task<Position> GetPosition(int id) => await GetItem<Position>("Position", id);
 
         public async Task<bool> AddDiplom(Diplom diplom) => await AddItem("Diplom", diplom);
         public async Task<bool> AddAuthor(Author author) => await AddItem("Author", author);
