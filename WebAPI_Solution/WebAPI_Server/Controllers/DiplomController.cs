@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using DiplomsClassLibrary.Models;
 using WebAPI_Server.Data;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
+using System.Collections;
 
 namespace WebAPI_Solution.Controllers
 {
-    [ApiController]
+	[Authorize]
+	[ApiController]
     [Route("[controller]")]
     public class DiplomController : ControllerBase
     {
@@ -16,13 +19,27 @@ namespace WebAPI_Solution.Controllers
             _dbContext = dbContext;
         }
 
-        [HttpGet]
-        public IEnumerable<Diplom> Get()
+        [HttpPost]
+        public IEnumerable<Diplom> Get(Diplom filter)
         {
-            return _dbContext.Diploms;
+			var title = filter.Title?.ToLower();
+			var headName = filter.HeadName?.ToLower();
+
+			var query = _dbContext.Diploms.AsQueryable();
+            if (!string.IsNullOrEmpty(title)) query = query.Where(x => x.Title.ToLower().Contains(title));
+			if (!string.IsNullOrEmpty(headName)) query = query.Where(x => x.HeadName.ToLower().Contains(headName));
+            if (filter.DirectionId != null) query = query.Where(x => x.DirectionId == filter.DirectionId);
+
+			return query.ToList();
         }
 
-        [HttpGet("{id}")]
+		[HttpGet("[action]")]
+		public IEnumerable GetDiplomsDistribution()
+		{
+			return _dbContext.Diploms.GroupBy(x => x.Direction.Name).Select(x => new { Name = x.Key, Value = x.Count() });
+		}
+
+		[HttpGet("{id}")]
         public Diplom Get(int id)
         {
             return _dbContext.Diploms.FirstOrDefault(x => x.Id == id);
@@ -67,5 +84,17 @@ namespace WebAPI_Solution.Controllers
             return Ok();
         }
 
-    }
+		[HttpPost("[action]/{id}")]
+		public IActionResult Duplicate(int id)
+		{
+			Diplom diplom = _dbContext.Diploms.Find(id);
+			if (diplom == null) return NotFound();
+			var copy = diplom.Copy();
+			_dbContext.Diploms.Add(copy);
+			_dbContext.SaveChanges();
+			return Ok();
+		}
+
+
+	}
 }

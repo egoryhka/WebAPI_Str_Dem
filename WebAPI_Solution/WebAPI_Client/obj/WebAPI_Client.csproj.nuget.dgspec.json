@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj": {}
+    "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj": {}
   },
   "projects": {
-    "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj": {
+    "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj",
+        "projectUniqueName": "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj",
         "projectName": "DiplomsClassLibrary",
-        "projectPath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj",
+        "projectPath": "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj",
         "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-        "outputPath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\obj\\",
+        "outputPath": "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,14 +39,19 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,18 +60,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj": {
+    "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj",
+        "projectUniqueName": "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj",
         "projectName": "WebAPI_Client",
-        "projectPath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj",
+        "projectPath": "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\WebAPI_Client.csproj",
         "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-        "outputPath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\obj\\",
+        "outputPath": "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\WebAPI_Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj": {
-                "projectPath": "E:\\Мага\\Гурин\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj"
+              "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj": {
+                "projectPath": "E:\\Maga\\Gurin\\WebAPI\\WebAPI_Str_Dem\\WebAPI_Solution\\DiplomsClassLibrary\\DiplomsClassLibrary.csproj"
               }
             }
           }
@@ -114,8 +119,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -127,7 +131,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
         }
       }
     }

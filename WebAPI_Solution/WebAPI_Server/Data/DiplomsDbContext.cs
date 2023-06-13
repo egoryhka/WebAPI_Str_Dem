@@ -4,8 +4,10 @@ using DiplomsClassLibrary.Models;
 namespace WebAPI_Server.Data
 {
     public class DiplomsDbContext : DbContext
-    {
-        public DbSet<Diplom> Diploms { get; set; }
+	{
+		public DbSet<User> Users { get; set; }
+
+		public DbSet<Diplom> Diploms { get; set; }
         public DbSet<Author> Authors { get; set; }
     
         public DbSet<Direction> Directions { get; set; }

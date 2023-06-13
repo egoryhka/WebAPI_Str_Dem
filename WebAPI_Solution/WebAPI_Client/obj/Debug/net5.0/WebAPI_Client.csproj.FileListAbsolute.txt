@@ -375,7 +375,6 @@ E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\D
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\WebAPI_Client.runtimeconfig.json
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\WebAPI_Client.runtimeconfig.dev.json
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\WebAPI_Client.dll
-E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\ref\WebAPI_Client.dll
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\WebAPI_Client.pdb
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -698,7 +697,6 @@ E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\D
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\DiplomsClassLibrary.dll
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\bin\Debug\net5.0\DiplomsClassLibrary.pdb
-E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.csprojAssemblyReference.cache
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.GeneratedMSBuildEditorConfig.editorconfig
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.AssemblyInfoInputs.cache
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.AssemblyInfo.cs
@@ -708,7 +706,6 @@ E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\D
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.RazorAssemblyInfo.cache
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.RazorAssemblyInfo.cs
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\staticwebassets\WebAPI_Client.StaticWebAssets.Manifest.cache
-E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\staticwebassets\WebAPI_Client.StaticWebAssets.xml
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\scopedcss\bundle\WebAPI_Client.styles.css
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.TagHelpers.input.cache
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.TagHelpers.output.cache
@@ -738,3 +735,10 @@ E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\D
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\ref\WebAPI_Client.dll
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.pdb
 E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.genruntimeconfig.cache
+E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\WebAPI_Client.csproj.AssemblyReference.cache
+E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\staticwebassets\WebAPI_Client.StaticWebAssets.Pack.cache
+E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\staticwebassets\msbuild.WebAPI_Client.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\staticwebassets\msbuild.build.WebAPI_Client.props
+E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.WebAPI_Client.props
+E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.WebAPI_Client.props
+E:\Мага\Гурин\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Client\obj\Debug\net5.0\refint\WebAPI_Client.dll

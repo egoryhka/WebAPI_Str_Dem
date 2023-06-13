@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using DiplomsClassLibrary.Models;
 using WebAPI_Server.Data;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
+using System.Collections;
 
 namespace WebAPI_Solution.Controllers
 {
-    [ApiController]
+	[Authorize]
+	[ApiController]
     [Route("[controller]")]
     public class DirectionController : ControllerBase
     {
@@ -16,11 +19,14 @@ namespace WebAPI_Solution.Controllers
             _dbContext = dbContext;
         }
 
-        [HttpGet]
-        public IEnumerable<Direction> Get()
+        [HttpPost]
+        public IEnumerable<Direction> Get(Direction filter)
         {
-            return _dbContext.Directions;
-        }
+			var name = filter.Name?.ToLower();
+			var query = _dbContext.Directions.AsQueryable();
+			if (!string.IsNullOrEmpty(name)) query = query.Where(x => x.Name.ToLower().Contains(name));
+			return query.ToList();
+		}
 
         [HttpGet("{id}")]
         public Direction Get(int id)
@@ -28,7 +34,7 @@ namespace WebAPI_Solution.Controllers
             return _dbContext.Directions.FirstOrDefault(x => x.Id == id);
         }
 
-        [HttpPost("{id}")]
+		[HttpPost("{id}")]
         public IActionResult Post(int id, Direction direction)
         {
             Direction existingDirection = _dbContext.Directions.Find(id);
