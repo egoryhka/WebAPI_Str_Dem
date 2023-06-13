@@ -175,7 +175,6 @@ E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\bin\Debug\net5
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\bin\Debug\net5.0\DiplomsClassLibrary.dll
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\bin\Debug\net5.0\DiplomsClassLibrary.pdb
-E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.csproj.AssemblyReference.cache
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.GeneratedMSBuildEditorConfig.editorconfig
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.AssemblyInfoInputs.cache
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.AssemblyInfo.cs
@@ -184,15 +183,12 @@ E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.MvcApplicationPartsAssemblyInfo.cache
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\scopedcss\bundle\WebAPI_Server.styles.css
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\staticwebassets\WebAPI_Server.StaticWebAssets.Manifest.cache
-E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\staticwebassets\WebAPI_Server.StaticWebAssets.Pack.cache
-E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\staticwebassets\msbuild.WebAPI_Server.Microsoft.AspNetCore.StaticWebAssets.props
-E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\staticwebassets\msbuild.build.WebAPI_Server.props
-E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.WebAPI_Server.props
-E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.WebAPI_Server.props
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.RazorTargetAssemblyInfo.cache
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.csproj.CopyComplete
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.dll
-E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\refint\WebAPI_Server.dll
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.pdb
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.genruntimeconfig.cache
 E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\ref\WebAPI_Server.dll
+E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\bin\Debug\net5.0\ref\WebAPI_Server.dll
+E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\WebAPI_Server.csprojAssemblyReference.cache
+E:\Maga\Gurin\WebAPI\WebAPI_Str_Dem\WebAPI_Solution\WebAPI_Server\obj\Debug\net5.0\staticwebassets\WebAPI_Server.StaticWebAssets.xml
